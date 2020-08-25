@@ -1,4 +1,6 @@
 .DS_Store
 /.build
 /Packages
+vendor/
+.swiftpm/
 /VideoPlayer.xcodeproj/project.xcworkspace/xcuserdata/gesen.xcuserdatad/
