@@ -29,7 +29,7 @@ Pod::Spec.new do |spec|
                    DESC
 
   spec.homepage     = "https://github.com/jpsison-io/VideoPlayerSwiftUI"
-  spec.screenshots  = "https://github.com/jpsison-io/VideoPlayerSwiftUI/blob/master/Images/logo.png", "https://github.com/VideoPlayerSwiftUI/VideoPlayer/blob/master/Images/screenshot.png"
+  spec.screenshots  = "https://raw.githubusercontent.com/jpsison-io/VideoPlayerSwiftUI/master/Images/logo.png", "https://raw.githubusercontent.com/jpsison-io/VideoPlayerSwiftUI/master/Images/screenshot.png"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -65,6 +65,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.platform     = :ios, "13.0"
+  spec.swift_version = "5.2"
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -92,7 +93,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "Sources/**/*.swift"
-  spec.exclude_files = "Package.swift", "Demo", "Images", "vendor"
+  spec.exclude_files = "Package.swift", "Demo", "Images"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -133,6 +134,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency "GSPlayer", "0.2.11"
 
 end
