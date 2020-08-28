@@ -142,7 +142,6 @@ extension VideoPlayer: UIViewRepresentable {
     
     public func makeUIView(context: Context) -> VideoPlayerView {
         let uiView = VideoPlayerView()
-        
         uiView.playToEndTime = {
             if self.config.autoReplay == false {
                 self.play = false
@@ -165,7 +164,6 @@ extension VideoPlayer: UIViewRepresentable {
             
             DispatchQueue.main.async { self.config.handler.onStateChanged?(state) }
         }
-        
         return uiView
     }
     

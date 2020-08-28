@@ -134,6 +134,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  spec.dependency "GSPlayer", "0.2.11"
+  spec.dependency "GSPlayer", "0.2.16"
 
 end
